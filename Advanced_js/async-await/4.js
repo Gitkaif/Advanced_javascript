@@ -27,4 +27,4 @@ async function validateUser(id) {
     console.log(error);
   }
 }
-validateUser(2);
+validateUser(1);

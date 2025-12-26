@@ -29,16 +29,17 @@ async function fetchDashboard(userId) {
     let loadAds = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve("Ads loaded");
-      }, 2200);
+      }, 3000);
     });
 
     let timeout = new Promise((resolve, reject) => {
       setTimeout(() => {
         reject("Dashboard timeout");
-      }, 2500);
+      }, 4000);
     });
 
-    let raceCall = await Promise.race([Promise.all([loadStats,loadFeed,loadAds]),timeout]);
+    let raceCall = await Promise.race([Promise.all([loadStats, loadFeed, loadAds]),timeout]);
+
     const[stats, feed, ads] = raceCall;
     console.log(stats);
     console.log(feed);
@@ -48,5 +49,6 @@ async function fetchDashboard(userId) {
     console.log(error);
     
   }
+
 }
 fetchDashboard(1);

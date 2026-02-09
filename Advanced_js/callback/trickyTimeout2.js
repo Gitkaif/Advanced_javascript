@@ -14,14 +14,14 @@ new Promise((resolve)=>{
 
 
 //async await version
-console.log('1')
-async function e(){
-    await new Promise((res)=>{
-        setTimeout(()=>{
-        console.log('2')
-        res()
-        },0)
-    })
-console.log('3')
-}
-e()
+// console.log('1')
+// async function e(){
+//     await new Promise((res)=>{
+//         setTimeout(()=>{
+//         console.log('2')
+//         res()
+//         },0)
+//     })
+// console.log('3')
+// }
+// e()

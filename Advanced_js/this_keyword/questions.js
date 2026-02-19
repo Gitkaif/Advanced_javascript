@@ -153,20 +153,20 @@
 
 // --------------------------------------------------------------------------------------------------
 
-const user = {
-  name: "Kaif",
+// const user = {
+//   name: "Kaif",
 
-  // Method: works only when called via the object
-  greet() {
-    console.log(this.name); // `this` depends on the caller
-  }
-};
+//   // Method: works only when called via the object
+//   greet() {
+//     console.log(this.name); // `this` depends on the caller
+//   }
+// };
 
-// Copying only the function, NOT the object context
-const fn = user.greet;
+// // Copying only the function, NOT the object context
+// const fn = user.greet;
 
-// Plain function call → no object → default `this`
-fn(); // `this` is window, so output is undefined
+// // Plain function call → no object → default `this`
+// fn(); // `this` is window, so output is undefined
 
 
 // --------------------------------------------------------------------------------------------------

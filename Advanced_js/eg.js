@@ -32,27 +32,27 @@
 //     console.log(res);
 //   });
 
-async function tasks() {
-  try {
-    let promise1 = new Promise((resolve, reject) => {
-      resolve("task 1 done");
-    });
+// async function tasks() {
+//   try {
+//     let promise1 = new Promise((resolve, reject) => {
+//       resolve("task 1 done");
+//     });
 
-    let promise2 = new Promise((resolve, reject) => {
-      resolve("task 2 done");
-    });
+//     let promise2 = new Promise((resolve, reject) => {
+//       resolve("task 2 done");
+//     });
 
-    let promise3 = new Promise((resolve, reject) => {
-      resolve("task 3 done");
-    });
+//     let promise3 = new Promise((resolve, reject) => {
+//       resolve("task 3 done");
+//     });
 
-    let parallel = await Promise.all([promise1, promise2, promise3]);
-    const[one,two,three] = parallel
-    console.log(one);
-    console.log(two);
-    console.log(three);
-  } catch (error) {
-    console.log(error);
-  }
-}
-tasks();
+//     let parallel = await Promise.all([promise1, promise2, promise3]);
+//     const[one,two,three] = parallel
+//     console.log(one);
+//     console.log(two);
+//     console.log(three);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// tasks();
